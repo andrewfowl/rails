@@ -17,7 +17,8 @@ Run "bundle"
 * Database initialization
 
 * How to run the test suite
-Run "rails server" or "rails s"
+Run dev with "foreman start -f Procfile.dev"
+Run other with "rails server" or "rails s"
 
 * Services (job queues, cache servers, search engines, etc.)
 
