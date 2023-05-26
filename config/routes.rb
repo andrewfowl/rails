@@ -7,8 +7,9 @@ Rails.application.routes.draw do
 
   get "about", to: redirect('/about-us')
 
-  get "sign_up", to: "registration#new"
-  post "sign_up", to: "registration#create"
+  get "sign_up", to: "registrations#new"
+  post "sign_up", to: "registrations#create"
+  delete "logout", to: "sessions#destroy"
 
   root to: "main#index"
 
