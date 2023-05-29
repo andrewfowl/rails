@@ -1,1 +1,7 @@
 # See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+# User-agent: Google
+# Disallow: 
+User-agent: *
+Disallow:
+
+# To exclude all pages use "Disallow: /" or for all files in tmp directory use "Disallow: /tmp/"
