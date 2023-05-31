@@ -24,6 +24,7 @@ For .env run `EDITOR="code --wait" bin/rails credentials:edit --environment=deve
 access credentials `rails c` then `Rails.application.credentials.twitter` or  `Rails.application.credentials.dig(:twitter, :api_keys)`
 
 * Services (job queues, cache servers, search engines, etc.)
+Updating model to handle omniauth callbacks: `rails g model TwitterAccount user:belongs_to name username image token secret` (user will be able to have multiple accounts; this allows to also track user API name, usename, avatart, their token and secret) then `rails db:migrate`
 
 * Deployment instructions
 
