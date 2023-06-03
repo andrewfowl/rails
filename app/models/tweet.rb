@@ -9,4 +9,10 @@ class Tweet < ApplicationRecord
     self.publish_at ||=24.hours.from_now
   end
 
+
+  #validate there is a published tweet - returns true if not empty
+  def published?
+    tweet_id?
+  end
+
 end
