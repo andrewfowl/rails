@@ -34,4 +34,7 @@ Add bavkground job worker `bundle add sidekiq` (it needs redis - start with `sud
 
 * Deployment instructions
 
+before deployment run `bundler lock --add-platform x86_64-linux`
+swap sqlite to postgresql `rails db:system:change --to=postgresql` then `bundle`
+
 * ...
