@@ -70,4 +70,5 @@ Rails.application.configure do
 
   #added based on youtube course
   config.action_mailer.default_url_options = { host: "localhost:3000" }
+  config.active_job.queue_adapter = :sidekiq
 end

@@ -30,6 +30,8 @@ Add twit model: `rails g model Tweet user:belongs_to twitter_account:belongs_to 
 
 Create new job `rails g job Tweet`
 
+Add bavkground job worker `bundle add sidekiq` (it needs redis - start with `sudo service redis-server start` once installed)
+
 * Deployment instructions
 
 * ...
