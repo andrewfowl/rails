@@ -28,6 +28,8 @@ Updating model to handle omniauth callbacks: `rails g model TwitterAccount user:
 
 Add twit model: `rails g model Tweet user:belongs_to twitter_account:belongs_to body:text publish_at:datetime tweet_id:string` then `rails db:migrate`
 
+Create new job `rails g job Tweet`
+
 * Deployment instructions
 
 * ...
