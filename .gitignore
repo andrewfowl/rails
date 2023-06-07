@@ -34,7 +34,9 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
-
 .vscode/.easyRedis.redi
 
 /.env
+/config/credentials/development.key
+
+/config/credentials/production.key

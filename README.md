@@ -39,6 +39,13 @@ swap sqlite to postgresql `rails db:system:change --to=postgresql` then `bundle`
 
 
 Not sure full code - but run `bin/rails db:create` and then `rails db:migrate`
-Add prod credentials `sudo EDITOR="code --wait" bin/rails credentials:edit --environment=development` copy content and paste here `rails credentials:edit --environment=production`
+Add prod credentials `sudo EDITOR="code --wait" bin/rails credentials:edit --environment=development` copy content and paste here `EDITOR="code --wait" bin/rails credentials:edit --environment=production`
 
 * ...
+
+Create a Railway project with the Postgres plugin
+Connect to your Railway project with   `railway link`
+Install Ruby requirements `bundle install`
+Migrate the database railway run `rake db:migrate`
+Run Rails railway run `bin/rails server`
+deploy with `railway up`
