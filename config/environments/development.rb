@@ -69,6 +69,6 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   #added based on youtube course
-  config.action_mailer.default_url_options = { host: "localhost:3000" }
+  config.action_mailer.default_url_options = { host: "0.0.0.0:3000" }
   config.active_job.queue_adapter = :sidekiq
 end
