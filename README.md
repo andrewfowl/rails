@@ -46,6 +46,6 @@ Add prod credentials `sudo EDITOR="code --wait" bin/rails credentials:edit --env
 Create a Railway project with the Postgres plugin
 Connect to your Railway project with   `railway link`
 Install Ruby requirements `bundle install`
-Migrate the database railway run `rake db:migrate`
+Migrate the database railway run `rails db:migrate`
 Run Rails railway run `bin/rails server`
 deploy with `railway up`
