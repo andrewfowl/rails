@@ -72,7 +72,7 @@ default: &default
 #
 development:
   <<: *default
-  url: <%= ENV['PGURL'] %>
+  url: <%= ENV['DATABASE_URL'] %>
   ssl_params: { verify_mode: <%= OpenSSL::SSL::VERIFY_NONE %> }
 #  adapter: postgresql
 #  encoding: unicode
