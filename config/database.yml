@@ -82,6 +82,7 @@ default: &default
 development:
   <<: *default
   url: <%= ENV['PGURL'] %>
+  ssl_params: { verify_mode: <%= OpenSSL::SSL::VERIFY_NONE %> }
 #  adapter: postgresql
 #  encoding: unicode
 #  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>

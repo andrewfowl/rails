@@ -40,3 +40,6 @@
 /config/credentials/development.key
 
 /config/credentials/production.key
+
+/ignoreProcfile
+/ignoreProcfile.dev
