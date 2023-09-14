@@ -72,7 +72,7 @@ group :test do
   gem "webdrivers"
 end
 
-gem "sidekiq", "6.5.5"
+gem "sidekiq", "7.1.3"
 
 gem "omniauth-twitter", "~> 1.4"
 

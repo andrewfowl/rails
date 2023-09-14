@@ -178,7 +178,7 @@ GEM
     puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.2)
-    rack (2.2.7)
+    rack (2.2.8)
     rack-protection (3.0.6)
       rack
     rack-test (2.1.0)
@@ -212,7 +212,7 @@ GEM
     rake (13.0.6)
     redis (5.0.6)
       redis-client (>= 0.9.0)
-    redis-client (0.14.1)
+    redis-client (0.17.0)
       connection_pool
     regexp_parser (2.8.0)
     reline (0.3.4)
@@ -231,10 +231,11 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    sidekiq (6.5.5)
-      connection_pool (>= 2.2.2)
-      rack (~> 2.0)
-      redis (>= 4.5.0)
+    sidekiq (7.1.3)
+      concurrent-ruby (< 2)
+      connection_pool (>= 2.3.0)
+      rack (>= 2.2.4)
+      redis-client (>= 0.14.0)
     simple_oauth (0.3.1)
     snaky_hash (2.0.1)
       hashie
@@ -309,7 +310,7 @@ DEPENDENCIES
   redis (~> 5.0.6)
   sassc-rails
   selenium-webdriver
-  sidekiq (= 6.5.5)
+  sidekiq (= 7.1.3)
   sprockets-rails
   stimulus-rails
   turbo-rails
